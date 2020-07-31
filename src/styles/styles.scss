@@ -160,3 +160,90 @@ header {
         }
     }
 }
+
+// About Blurb
+.about-blurb {
+    padding: 48px 0;
+    background: $white;
+    position: relative;
+    .inner-blurb {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .content {
+            width: 33%;
+            @media (max-width: 1440px) {
+                width: 40%;
+            }
+            h3 {
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: 1.8rem;
+                letter-spacing: 1.5px;
+                margin: 0;
+            }
+            p {
+                font-size: 1rem;
+                line-height: 2rem;
+                font-weight: 300;
+                margin: 40px 0 72px;
+            }
+            .btn-row {
+                a {
+                    font-weight: 700;
+                    font-size: .875rem;
+                    letter-spacing: 1.5px;
+                    color: $black;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                }
+            }
+        }
+        .images {
+            width: 50%;
+            height: 1000px;
+            position: relative;
+            z-index: 7;
+            @media (max-width: 1440px) {
+                height: 800px;
+            }
+            .top-right {
+                position: absolute;
+                width: 460px;
+                bottom: 12rem;
+                right: 0;
+                z-index: 4;
+                @media (max-width: 1440px) {
+                    width: 360px;
+                }
+            }
+            .top-left {
+                position: absolute;
+                width: 410px;
+                left: 0;
+                top: 5rem;
+                @media (max-width: 1440px) {
+                    width: 310px;
+                }
+            }
+        }
+    }
+    .blue-box {
+        background: black;
+        height: 460px;
+        width: 836px;
+        position: absolute;
+        right: 0;
+        top: 44%;
+        transform: translateY(-50%);
+        @media (max-width: 1440px) {
+            width: 636px;
+            height: 340px
+        }
+        &.overlay {
+            z-index: 7;
+            background-color: rgba($color: #ADD8E6, $alpha: 0.5);
+            mix-blend-mode: overlay;
+        }
+    }
+}
