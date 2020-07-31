@@ -7,12 +7,12 @@ const Header = () => (
      <div className='inner-header'>
 
       <div className='logo'>
-        <Link to='/'>MY PORTFOLIO</Link>
+        <Link to='/'>MATTEO RICCI</Link>
       </div>
       <div className='navigation'>
         <nav>
           <Link to='/about'>About</Link>
-          <Link to='/work'>Work</Link>
+          <Link to='/projects'>Projects</Link>
           <Link to='/contact'>Contact</Link>
         </nav>
       </div>

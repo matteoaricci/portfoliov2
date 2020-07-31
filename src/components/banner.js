@@ -6,21 +6,21 @@ const Banner = () => {
 
     const data = useStaticQuery(graphql`
     query {
-      snowbuds: file(relativePath: { eq: "snowboard-buds-resized.png" }) {
+      unity: file(relativePath: { eq: "unity-portfolio-blue.PNG" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      gradLuke: file(relativePath: { eq: "luke-grad-resized.png" }) {
+      selfPortrait: file(relativePath: { eq: "self-portrait-lg.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
+          fluid(maxWidth: 536, quality: 90) {
+            ...GatsbyImageSharpFluid,
           }
         }
       }
-      bevWed: file(relativePath: { eq: "bev-wed-resized.png" }) {
+      vscode: file(relativePath: { eq: "vscode-portfolio-blue.PNG" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
@@ -36,16 +36,22 @@ const Banner = () => {
             <div className='container'>
                 <div className='row'>
                     <div className='side-image left'>
-                        <Img fluid={data.bevWed.childImageSharp.fluid}/>
+                        <Img fluid={data.unity.childImageSharp.fluid}/>
                     </div>
-                    <div className='main-text'>Matteo Ricci</div>
+                    <div className='main-text'>Welcome</div>
                     <div className="main-image">
-                    <Img fluid={data.snowbuds.childImageSharp.fluid} />
+                    <Img fluid={data.selfPortrait.childImageSharp.fluid} />
                     </div>
                     <div className='side-image right'>
-                        <Img fluid={data.gradLuke.childImageSharp.fluid}/>
+                        <Img fluid={data.vscode.childImageSharp.fluid}/>
                     </div>
                 </div>
+                <div className='scroll'>
+                  <span>Scroll Down</span>
+                </div>
+            </div>
+            <div className='fixed-misc'>
+              Full Stack Developer and Game Design Enthusiast
             </div>
         </div>
     );
