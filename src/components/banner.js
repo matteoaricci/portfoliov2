@@ -51,7 +51,7 @@ const Banner = () => {
                 </div>
             </div>
             <div className='fixed-misc'>
-              Full Stack Developer and Game Design Enthusiast
+              Full Stack Developer
             </div>
         </div>
     );
