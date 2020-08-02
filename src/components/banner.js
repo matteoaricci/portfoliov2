@@ -35,15 +35,9 @@ const Banner = () => {
         <div className='banner'>
             <div className='container'>
                 <div className='row'>
-                    <div className='side-image left'>
-                        <Img fluid={data.unity.childImageSharp.fluid}/>
-                    </div>
                     <div className='main-text'>Welcome</div>
                     <div className="main-image">
                     <Img fluid={data.selfPortrait.childImageSharp.fluid} />
-                    </div>
-                    <div className='side-image right'>
-                        <Img fluid={data.vscode.childImageSharp.fluid}/>
                     </div>
                 </div>
                 <div className='scroll'>

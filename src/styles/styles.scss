@@ -221,7 +221,7 @@ header {
                 position: absolute;
                 width: 410px;
                 left: 0;
-                top: 5rem;
+                top: 14.4rem;
                 @media (max-width: 1440px) {
                     width: 310px;
                 }
@@ -245,5 +245,78 @@ header {
             background-color: rgba($color: #ADD8E6, $alpha: 0.5);
             mix-blend-mode: overlay;
         }
+    }
+}
+
+// Contact Page
+.contact {
+    display: flex;
+    background-color: $white;
+    position: relative;
+    height: 100vh;
+
+        .row {
+            position: relative;
+            height: 100vh;
+
+            .contact-header {
+                font-size: 2.8rem;
+                text-transform: uppercase;
+                letter-spacing: 20px;
+                font-weight: 700;
+                color: $white;
+                position: absolute;
+                width: 100%;
+                left: 0;
+                top: 18%;
+                // transform: translateY(-300%);
+                text-align: center;
+                mix-blend-mode: difference;
+                z-index: 9;
+                // @media (max-width: 1440px) {
+                //     font-size: 4.4rem;
+                //     letter-spacing: 36px;
+                // }
+            }
+            .contacts {
+               display: flex;
+               align-items: center;
+               height: 100vh;
+               justify-content: space-between;
+               font-weight: 700;
+               font-size: .875rem;
+               letter-spacing: 1.5px;
+               text-transform: uppercase;
+               margin: 0 auto;
+               width: 75%;
+            }
+
+            .fixed-misc {
+                position: fixed;
+                top: 50%;
+                right: -48px;
+                transform: rotate(-90deg);
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: .875rem;
+                letter-spacing: 1.5px;
+                color: $white;
+                mix-blend-mode: difference;
+                z-index: 8;
+                @media (max-width: 1440px) {
+                    right: -112px
+                }
+            }
+        }
+    
+    .fixed-misc {
+        position: fixed;
+        top: 50%;
+        right: -48px;
+        transform: rotate(-90deg);
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 0.875rem;
+        letter-spacing: 1.5px;
     }
 }
