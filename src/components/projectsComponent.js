@@ -11,10 +11,10 @@ const ProjectsComponent = () => {
                             COVID Tracer
                         </div>
                         <div className='project-2'>
-                            Project 2
+                            StarGazers
                         </div>
                         <div className='project-3'>
-                            Project 3
+                            BounceAround
                         </div>
                     </div>
                 </div>
