@@ -439,7 +439,7 @@ header {
             display: flex;
             align-items: center;
             height: 100vh;
-            justify-content: space-between;
+            justify-content: left;
             font-weight: 700;
             font-size: 1.2rem;
             letter-spacing: 1.5px;
@@ -449,7 +449,8 @@ header {
             text-decoration: none;
             
             div {
-
+                padding: 2rem;
+                
             }
         }
     }
