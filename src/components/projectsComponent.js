@@ -1,4 +1,9 @@
 import React from 'react';
+import {gsap} from 'gsap';
+import {ScrollTrigger} from 'gsap/ScrollTrigger'
+gsap.regeristerPlugin(ScrollTrigger)
+
+
 
 const ProjectsComponent = () => {
     return (
