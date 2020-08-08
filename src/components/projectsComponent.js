@@ -12,19 +12,16 @@ const ProjectsComponent = () => {
                 <div className='row'>
                     <div className='projects-header'>Projects</div>
                     <div className="projects-container">
-                        <div className='project-1'>
+                        <section className='project-1'>
                             COVID Tracer
-                        </div>
-                        <div className='project-2'>
+                        </section>
+                        <section className='project-2'>
                             StarGazers
-                        </div>
-                        <div className='project-3'>
+                        </section>
+                        <section className='project-3'>
                             BounceAround
-                        </div>
+                        </section>
                     </div>
-                </div>
-                <div className='scroll'>
-                  <span>Scroll Down</span>
                 </div>
             </div>
             <div className='fixed-misc'>
